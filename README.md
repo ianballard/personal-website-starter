@@ -1,4 +1,6 @@
 # personal-website-starter
+# [Check out the live site!](https://iballard95.github.io/personal-website-starter/)
+
 ## Use this repo to kick start your personal website!
 This repo is a template you can easily clone, make some updates to and, deploy with [github pages](https://pages.github.com/). 
 
