@@ -35,7 +35,7 @@ Github Pages use an SSG (static site generator) called [jekyll](https://jekyllrb
         - Update the background url defined on line 6; currently set to './assets/img/hero.svg'
 5. Push your changes
 6. Go to your repository on GitHub
-7. Publish your website Github Pages
+7. Publish your website on Github Pages
     - Choose the source branch (default is master) and click save
     - After a few minutes your website should be deployed!
 
