@@ -17,8 +17,8 @@
         <div class="py-3 my-3">
             <h1 class="text-uppercase blue-1">Skills</h1>
             <div class="my-3">
-                <h4>{{site.data.skills.header}}</h4>
-                <h4>{{site.data.skills.subheader}}</h4>
+                <h5>{{site.data.skills.header}}</h5>
+                <h5>{{site.data.skills.subheader}}</h5>
             </div>
         </div>
 
@@ -27,7 +27,7 @@
             {% for skill in site.data.skills.skill_list %}
             <div class="col-12 col-lg-4 mb-5">
                 <h3 class="blue-2 text-uppercase">{{ skill.name }}</h3>
-                <h4>{{ skill.description }}</h4>
+                <h5>{{ skill.description }}</h5>
             </div>
             {% endfor %}
         </div>
@@ -43,7 +43,7 @@
             <div class="col-12 col-lg-4 mb-5">
                 <h3 class="blue-2 text-uppercase">{{ certification.name }}</h3>
                 {% for topic in certification.topics %}
-                <h5 class="custom-list-item mb-2">{{ topic }}</h5>
+                <h6 class="custom-list-item mb-2">{{ topic }}</h6>
                 {% endfor %}
             </div>
             {% endfor %}
