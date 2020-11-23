@@ -1,0 +1,64 @@
+<style>
+    #skills {
+        background: url("assets/img/texture-2.svg") no-repeat center top;
+        background-size: cover;
+    }
+
+    .custom-list {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .custom-list-item:before {
+        content: '✓';
+    }
+</style>
+
+<div id="skills">
+
+    <div class="container">
+
+        {% if site.data.skills.skill_list.size > 0 %}
+        <div class="py-3 my-3">
+            <h1 class="text-uppercase blue-1">Skills</h1>
+            <div class="my-3">
+                <h3>{{site.data.skills.header}}</h3>
+                <h3>{{site.data.skills.subheader}}</h3>
+            </div>
+        </div>
+
+
+        <div class="row">
+            {% for skill in site.data.skills.skill_list %}
+            <div class="col-12 col-lg-4 mb-5">
+                <h3 class="blue-2 text-uppercase">{{ skill.name }}</h3>
+                <h4>{{ skill.description }}</h4>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+
+        {% if site.data.skills.certifications.size > 0 %}
+        <div class="py-3 my-3">
+            <h1 class="text-uppercase blue-1">Certifications</h1>
+        </div>
+        <div class="row">
+            {% for certification in site.data.skills.certifications %}
+            <div class="col-12 col-lg-4 mb-5">
+                <h3 class="blue-2 text-uppercase">{{ certification.name }}</h3>
+                <ul class="custom-list">
+                    {% for topic in certification.topics %}
+                    <li class="custom-list-item mb-2">
+                        {{ topic }}
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+    </div>
+
+</div>

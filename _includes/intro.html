@@ -1,0 +1,97 @@
+<style>
+
+    #intro-img {
+        width: 100%;
+        height: auto;
+        background: url(./assets/img/hero.svg) no-repeat top right;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        position: absolute;
+    }
+    #intro-img .overlay {
+        padding: 480px 0;
+        background: -moz-linear-gradient(rgba(0,0,0,0) 0%, rgba(52,58,64,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(rgba(0,0,0,0) 0%, rgba(52,58,64,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(rgba(0,0,0,0) 0%,rgba(52,58,64,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    }
+
+    #intro-content {
+        position: absolute;
+        padding-left: 250px;
+    }
+
+    #title {
+        font-size: calc(12px + 2.5vw);
+    }
+
+    #subtitle {
+        font-size: calc(12px + 1vw);
+    }
+
+    #header .intro-text {
+        padding-top: 350px;
+        padding-bottom: 350px;
+        text-align: left;
+        width: 100%;
+    }
+
+    #header {
+        height: 960px;
+    }
+
+    @media (max-width: 989px) {
+
+        #intro-img .overlay {
+            padding: 200px 0;
+        }
+
+        #header {
+            height: 500px;
+        }
+
+        #header .intro-text {
+            padding-top: 150px;
+            padding-bottom: 150px;
+            width: 70%;
+        }
+
+        #intro-content {
+            padding-left: 150px;
+        }
+
+    }
+
+    @media (max-width: 500px) {
+
+        #intro-content {
+            padding-left: 50px;
+        }
+
+        #title {
+            font-size: 32px;
+        }
+
+        #subtitle {
+            font-size: 24px;
+        }
+
+    }
+
+</style>
+
+<header id="header">
+    <div id="intro-img">
+        <div class="overlay">
+        </div>
+    </div>
+    <div id="intro-content">
+        <div class="intro-text">
+            <h3 id="title" class="text-uppercase">{{page.title}}</h3>
+            <h4 id="subtitle" class="blue-1">{{page.description}}</h4>
+        </div>
+    </div>
+</header>

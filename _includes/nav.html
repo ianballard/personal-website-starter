@@ -1,0 +1,35 @@
+<style>
+    a:link, a:visited, a:hover, a:active {
+        text-decoration: none;
+    }
+</style>
+
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <a class="navbar-brand" href="#">{{page.title}}</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav text-center">
+
+            {% if site.data.about.size > 0 %}
+                <li class="nav-item mx-2"><a href="#about" class="blue-2">About</a></li>
+            {% endif %}
+
+            {% if site.data.skills.skill_list.size > 0 or site.data.skills.certifications.size > 0%}
+                <li class="nav-item mx-2"><a href="#skills" class="blue-2">Skills</a></li>
+            {% endif %}
+
+            {% if site.data.projects.size > 0 %}
+                <li class="nav-item mx-2"><a href="#projects" class="blue-2">Projects</a></li>
+            {% endif %}
+
+            {% if site.data.testimonials.size > 0 %}
+                <li class="nav-item mx-2"><a href="#testimonials" class="blue-2">Testimonials</a></li>
+            {% endif %}
+
+            <li class="nav-item mx-2"><a href="#contact" class="blue-2">Contact</a></li>
+
+        </ul>
+    </div>
+</nav>

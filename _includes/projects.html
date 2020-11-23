@@ -1,0 +1,18 @@
+<style>
+    #projects {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+</style>
+
+<div id="projects" class="container">
+    <h1 class="text-uppercase blue-1">Projects</h1>
+    <div class="row">
+        {% for project in site.data.projects %}
+        <div class="col-12 col-lg-6 mb-5">
+            <h3 class="blue-2 text-uppercase">{{ project.name }}</h3>
+            <h4>{{ project.description }}</h4>
+        </div>
+        {% endfor %}
+    </div>
+</div>

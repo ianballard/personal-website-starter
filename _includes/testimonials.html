@@ -1,0 +1,23 @@
+<style>
+    #testimonials {
+        background: url("assets/img/texture-1.svg") no-repeat top center;
+        background-size: cover;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+</style>
+
+<div id="testimonials">
+    <div class="container">
+        <h1 class="text-uppercase blue-1">Testimonials</h1>
+        <div class="row">
+            {% for testimonial in site.data.testimonials %}
+            <div class="col-12 col-lg-6 mb-5">
+                <h3 class="blue-1">{{ testimonial.person.name }}</h3>
+                <h4 class="text-uppercase">{{ testimonial.person.title }}</h4>
+                <h5>{{ testimonial.quote }}</h5>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{page.description}}">
+    <meta name="author" content="{{page.author}}">
+
+    <title>{{ page.title }}</title>
+
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+<body id="body">
+
+    {% include nav.html %}
+
+    {% include intro.html %}
+
+    {% if site.data.about.size > 0 %}
+        {% include about.html %}
+    {% endif %}
+
+    {% if site.data.skills.skill_list.size > 0 or site.data.skills.certifications.size > 0%}
+        {% include skills.html %}
+    {% endif %}
+
+    {% if site.data.projects.size > 0 %}
+        {% include projects.html %}
+    {% endif %}
+
+    {% if site.data.testimonials.size > 0 %}
+        {% include testimonials.html %}
+    {% endif %}
+
+    {% include contact.html %}
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

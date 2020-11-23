@@ -1,0 +1,29 @@
+<style>
+    #contact {
+        padding: 50px;
+    }
+</style>
+
+<div id="contact" class="container text-center">
+    <h2>Get In Touch</h2>
+    <div class="d-flex justify-content-center fs-32">
+
+        {% if site.data.contact.github_username %}
+        <div class="mx-4">
+            <a href="https://github.com/{{site.data.contact.github_username}}"><i class="fa fa-github"></i></a>
+        </div>
+        {% endif %}
+
+        {% if site.data.contact.linkdin_username %}
+        <div class="mx-4">
+            <a href="https://www.linkedin.com/in/{{site.data.contact.linkdin_username}}"><i class="fa fa-linkedin"></i></a>
+        </div>
+        {% endif %}
+
+        {% if site.data.contact.email %}
+        <div class="mx-4">
+            <a href="mailto:{{site.data.contact.email}}"><i class="fa fa-envelope"></i></a>
+        </div>
+        {% endif %}
+    </div>
+</div>
