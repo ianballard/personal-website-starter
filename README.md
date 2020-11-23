@@ -1,11 +1,13 @@
 # personal-website-starter
-# [Check out the live site!](https://iballard95.github.io/personal-website-starter/)
 
-## Use this repo to kick start your personal website!
+### Use this repo to kick start your personal website!
 This repo is a template you can easily clone, make some updates to and, deploy with [github pages](https://pages.github.com/). 
+### [Check out the live site!](https://iballard95.github.io/personal-website-starter/)
 
-###
 Github Pages use an SSG (static site generator) called [jekyll](https://jekyllrb.com/). SSGs make it very easy to create static sites. 
+
+### Prerequisites
+1. [jekyll](https://jekyllrb.com/docs/)
 
 ### Get your own personal website up within a few minutes
 
@@ -30,7 +32,7 @@ Github Pages use an SSG (static site generator) called [jekyll](https://jekyllrb
         - If you have any certifications you can list them out as well
     - If you have any testimonials, add them in testimonials.yml
 4. Update the splash screen/ hero image (optional)
-    - Add a high resolution picture to the /assets/img directory
+    - Add a high resolution landscape picture to the /assets/img directory
     - Navigate to _includes/intro.html
         - Update the background url defined on line 6; currently set to './assets/img/hero.svg'
 5. Push your changes
