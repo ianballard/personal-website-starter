@@ -2,12 +2,21 @@
 ## Use this repo to kick start your personal website!
 This repo is a template you can easily clone, make some updates to and, deploy with [github pages](https://pages.github.com/). 
 
+###
+Github Pages use an SSG (static site generator) called [jekyll](https://jekyllrb.com/). SSGs make it very easy to create static sites. 
+
 ### Get your own personal website up within a few minutes
 
 1. Click the "Use this template" button
 2. Enter the Repository name of your choosing. 
     - **Note** If you want the website to be "your_username".github.io, then the repo name needs to be "your_username".github.io
-3. Open the project locally, and navigate to /index.md
+3. Clone your new repo locally
+4. Build and serve the project locally
+    - At the root of the project, use this command to start the project locally with tracing and hot reloads enabled
+        - `bundle exec jekyll serve --trace --livereload`
+    - In your browser navigate to localhost:4000
+    - You will be able to see the template and any subsequent changes you make
+4. Open the project and navigate to /index.md
     - Update the title to your website title (ie. your full name, or something along those lines)
     - Update the author to your name
     - Update the description of the website
