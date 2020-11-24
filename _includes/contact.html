@@ -26,4 +26,12 @@
         </div>
         {% endif %}
     </div>
+
+    {% if site.data.contact.github_username and site.data.contact.github_repo %}
+    <a href="https://github.com/{{site.data.contact.github_username}}/{{site.data.contact.github_repo}}"
+       class="btn btn-primary my-4">
+        View Source
+    </a>
+    {% endif %}
+
 </div>

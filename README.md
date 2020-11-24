@@ -29,7 +29,7 @@ Github Pages use an SSG (static site generator) called [jekyll](https://jekyllrb
     - Update the description of the website
 3. Navigate to the _data directory
     - In about.yml write a few sentences/ paragraphs about yourself
-    - In contact.yml update the fields with your own usernames and email
+    - In contact.yml update the fields with your own usernames, email, and github repo
     - In projects.yml list out your most relevant projects and work you are most proud of
     - In skills.yml talk about some relevant things that you are good at.
         - If you have any certifications you can list them out as well
