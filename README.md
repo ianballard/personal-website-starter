@@ -8,6 +8,9 @@ Github Pages use an SSG (static site generator) called [jekyll](https://jekyllrb
 
 ### Prerequisites
 1. [jekyll](https://jekyllrb.com/docs/)
+    - Install all [jekyll prerequisites](https://jekyllrb.com/docs/#prerequisites)
+    - In your terminal, run `gem install jekyll bundler`
+    
 
 ### Get your own personal website up within a few minutes
 
@@ -36,8 +39,10 @@ Github Pages use an SSG (static site generator) called [jekyll](https://jekyllrb
     - Navigate to _includes/intro.html
         - Update the background url defined on line 6; currently set to './assets/img/hero.svg'
 5. Push your changes
-6. Go to your repository on GitHub
-7. Publish your website on Github Pages
+6. Publish your website on Github Pages
+    - Go to your repository on GitHub
+    - Navigate to the repository Settings > Options
+    - Scroll down to the section titled "GitHub Pages"
     - Choose the source branch (default is master) and click save
     - After a few minutes your website should be deployed!
 
